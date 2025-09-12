@@ -125,7 +125,7 @@ const Navbar = () => {
             {/* Socials in Mobile Menu */}
             <div className="flex space-x-6 mt-4">
               <a
-                href="https://github.com/VareshWani"
+                href="https://github.com/Ksuryawanshi1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -133,7 +133,7 @@ const Navbar = () => {
                 <FaGithub size={26} />
               </a>
               <a
-                href="https://www.linkedin.com/in/varesh-milind-wani-5381972b3/"
+                href="https://www.linkedin.com/in/kunal-suryawanshi-a36b702a7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
