@@ -2,6 +2,9 @@
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
 import sp from './assets/tech_logo/springboot.png';
+import hb from './assets/tech_logo/hibernate.jpg';
+import RA from './assets/tech_logo/RestAPI.jpeg';
+import JA from './assets/tech_logo/JPA.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 
@@ -54,10 +57,13 @@ export const SkillsInfo = [
     ],
   },
   {
-    title: 'DATABASE',
+    title: 'BACKEND & DATABASE',
     skills: [
       { name: 'MySQL', logo: mysqlLogo },
-      { name: 'SpringBoot', logo: sp }
+      { name: 'SpringBoot', logo: sp },
+      { name: 'Hibernate', logo: hb },
+      { name: 'RestAPI', logo: RA },
+      { name: 'JPA', logo: JA }
     ],
   },
   {
