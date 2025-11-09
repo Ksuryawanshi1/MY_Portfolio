@@ -59,7 +59,7 @@ export const SkillsInfo = [
     ],
   },
   {
-    title: 'BACKEND',
+    title: 'Backend & DB',
     skills: [
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'SpringBoot', logo: sp },
