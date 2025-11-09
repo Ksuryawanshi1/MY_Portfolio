@@ -1,7 +1,7 @@
 // Skills Section Logo's
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
-
+import sp from './assets/tech_logo/springboot.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 
@@ -57,6 +57,7 @@ export const SkillsInfo = [
     title: 'DATABASE',
     skills: [
       { name: 'MySQL', logo: mysqlLogo },
+      { name: 'SpringBoot', logo: sp }
     ],
   },
   {
