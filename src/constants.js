@@ -5,6 +5,8 @@ import sp from './assets/tech_logo/springboot.png';
 import hb from './assets/tech_logo/hibernate.jpg';
 import RA from './assets/tech_logo/RestAPI.jpeg';
 import JA from './assets/tech_logo/JPA.png';
+import Postman from './assets/tech_logo/postman.png';
+import PostgreSql from './assets/tech_logo/postgresql.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 
@@ -57,13 +59,14 @@ export const SkillsInfo = [
     ],
   },
   {
-    title: 'BACKEND & DATABASE',
+    title: 'BACKEND',
     skills: [
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'SpringBoot', logo: sp },
       { name: 'Hibernate', logo: hb },
       { name: 'RestAPI', logo: RA },
-      { name: 'JPA', logo: JA }
+      
+      { name: 'PostgreSQL', logo: PostgreSql }
     ],
   },
   {
@@ -83,6 +86,7 @@ export const SkillsInfo = [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
+      { name: 'Postman', logo: Postman },
       { name: 'Eclips IDE', logo: ECIDE }
     ],
   },
