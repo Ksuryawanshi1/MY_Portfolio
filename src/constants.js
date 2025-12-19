@@ -169,7 +169,7 @@ export const SkillsInfo = [
   export const projects = [
  
     {
-      id: 0,
+      id: 2,
       title: "Campus Career Hub",
       description:
         "As the Front-End Developer, I contributed to the development of Campus Career Hub, an innovative full-stack platform built with the MERN stack. Designed as a comprehensive bridge between students and recruiters, the portal empowers students to seamlessly apply to companies, undertake aptitude assessments, participate in live online interviews, and receive digitally generated offer letters—all in a unified ecosystem. With its modern interface, secure architecture, and end-to-end recruitment workflow, this project highlights my expertise in building responsive user interfaces, ensuring smooth user experiences, and collaborating effectively within a team to deliver impactful real-world applications.",
@@ -179,7 +179,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 1,
+      id: 5,
       title: "Emotion Sense",
       description:
         "Emotion Sense is an interactive web application built using HTML, CSS, JavaScript, and Emotion Detection APIs. By leveraging the user’s camera, the system intelligently recognizes facial expressions, analyzes emotional states in real-time, and delivers personalized recommendations tailored to the detected mood. Designed with a sleek front-end and seamless API integration, the project demonstrates my ability to blend modern UI with AI-driven insights, creating an engaging and human-centric digital experience.",
@@ -190,7 +190,7 @@ export const SkillsInfo = [
     },
  
     {
-      id: 2,
+      id: 4,
       title: "World Weather",
       description:
         "World Weather is a lightweight web application built with HTML, CSS, and JavaScript, integrated with a Weather API to provide real-time climate updates. By simply entering a city name, users can instantly access accurate weather details from anywhere in the world. This project demonstrates my skills in API integration, dynamic data rendering, and building responsive user-friendly interfaces that deliver practical, real-world utility.",
@@ -200,7 +200,7 @@ export const SkillsInfo = [
       webapp: "https://ksuryawanshi1.github.io/Weather-Webapp/",
     },
     {
-      id: 3,
+      id: 6,
       title: "Bank Management System",
       description:
          "The Bank Management System is a secure and efficient application developed using Java, JDBC, and MySQL, designed to digitally manage and streamline banking operations. It maintains complete records of customers, accounts, and transactions, ensuring accuracy, transparency, and security in financial data handling. This project highlights my expertise in database-driven application development, backend logic implementation, and real-world financial problem solving, creating a scalable solution that simplifies bank administration.",
@@ -210,7 +210,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 4,
+      id: 3,
       title: "Reply Wizard ",
       description:
          "Reply Wizard is an AI-powered email automation tool built using Spring Boot and React.js that helps users generate smart, context-aware email replies instantly. The system analyzes incoming emails, summarizes key information, and uses AI to generate professional and personalized responses, significantly reducing manual typing effort and response time. With secure backend APIs, a smooth UI, and real-time AI integration, Reply Wizard improves productivity and enhances communication efficiency.",
@@ -220,7 +220,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 5,
+      id: 1,
       title: "Research Pilot",
       description:
          "Research Pilot is an AI-powered learning assistant built using a Chrome Extension and a Spring Boot backend that helps users transform online content into meaningful study material. It analyzes web pages, summarizes key information, extracts important points, generates intelligent questions, and creates MCQs using AI, making learning faster and more efficient. With seamless browser integration, reliable backend processing, and intelligent prompt handling, Research Pilot helps students, educators, and researchers quickly understand complex content and convert raw web text into structured, easy-to-learn knowledge.",
@@ -230,7 +230,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 6,
+      id: 0,
       title: "Finora-AI Financial Assistant",
       description:
          "Finora is an intelligent personal finance management platform that helps users track expenses, analyze spending patterns, and receive AI-powered financial suggestions. Built with Spring Boot 3, Java 21, and React 18, the system provides secure authentication, powerful analytics, and real-time insights to help users make smarter financial decisions.The application integrates Google Gemini AI to analyze transaction data and generate meaningful financial recommendations. Automated email alerts powered by Brevo SMTP and Spring Scheduler keep users informed with daily expense summaries, reminders, and alerts. The frontend is built using React + Vite, featuring rich data visualizations, responsive UI, and a seamless user experience.",
