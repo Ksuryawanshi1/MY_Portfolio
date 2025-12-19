@@ -8,18 +8,15 @@ const Work = () => {
   const handleOpenModal = (project) => setSelectedProject(project);
   const handleCloseModal = () => setSelectedProject(null);
 
-  // Lock / unlock background scroll on modal open
+  // Disable background scroll while modal open
   useEffect(() => {
     document.body.style.overflow = selectedProject ? "hidden" : "auto";
   }, [selectedProject]);
 
-  // Motion variants
+  // Motion Variants
   const containerVariants = {
     hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15 },
-    },
+    show: { opacity: 1, transition: { staggerChildren: 0.15 } },
   };
 
   const cardVariants = {
@@ -82,6 +79,7 @@ const Work = () => {
               <h3 className="text-2xl font-bold text-white mb-2">
                 {project.title}
               </h3>
+
               <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
                 {project.description}
               </p>
@@ -124,6 +122,7 @@ const Work = () => {
                 <h2 className="text-xl font-semibold text-white">
                   {selectedProject.title}
                 </h2>
+
                 <button
                   onClick={handleCloseModal}
                   className="text-purple-500 text-3xl font-bold hover:text-white"
@@ -132,15 +131,15 @@ const Work = () => {
                 </button>
               </div>
 
-              {/* Scroll Area */}
+              {/* Scrollable Area */}
               <div className="overflow-y-auto max-h-[78vh] scrollbar-thin">
-
+                
                 {/* Image */}
                 <div className="w-full flex justify-center px-5 py-4">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
-                    className="w-full max-h-[300px] object-cover rounded-xl shadow-lg"
+                    className="w-full max-h-[450px] object-contain rounded-xl shadow-lg bg-white"
                   />
                 </div>
 
