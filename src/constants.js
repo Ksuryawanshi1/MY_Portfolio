@@ -207,5 +207,15 @@ export const SkillsInfo = [
       github: "https://github.com/Ksuryawanshi1/Bank-Management-System",
       webapp: "",
     },
+    {
+      id: 4,
+      title: "Reply Wizard ",
+      description:
+         "Reply Wizard is an AI-powered email automation tool built using Spring Boot and React.js that helps users generate smart, context-aware email replies instantly. The system analyzes incoming emails, summarizes key information, and uses AI to generate professional and personalized responses, significantly reducing manual typing effort and response time. With secure backend APIs, a smooth UI, and real-time AI integration, Reply Wizard improves productivity and enhances communication efficiency.",
+      image: Reply,
+      tags: ["Java", "React", "SpringBoot","Gemini Ai"],
+      github: "https://github.com/Ksuryawanshi1/ReplyWizard",
+      webapp: "",
+    },
   
   ];  
