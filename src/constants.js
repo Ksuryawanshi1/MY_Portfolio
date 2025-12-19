@@ -40,7 +40,8 @@ import sitrc from './assets/education_logo/collegelogo.png';
 import Emotion from './assets/work_logo/EmotionDetection.png';
 
 import Campus from './assets/work_logo/Campus.png';
-import bank from './assets/work_logo/bank.png'
+import bank from './assets/work_logo/bank.png';
+import Reply from './assets/work_logo/Reply.png'
 
 import Weather from './assets/work_logo/Weather.png';
 
