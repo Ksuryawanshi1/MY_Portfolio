@@ -177,6 +177,16 @@ export const SkillsInfo = [
       github: "https://github.com/Ksuryawanshi1/Finora-AI-Financial-Assistant",
       webapp: "",
     },
+    {
+      id: 1,
+      title: "Research Pilot",
+      description:
+         "Research Pilot is an AI-powered learning assistant built using a Chrome Extension and a Spring Boot backend that helps users transform online content into meaningful study material. It analyzes web pages, summarizes key information, extracts important points, generates intelligent questions, and creates MCQs using AI, making learning faster and more efficient. With seamless browser integration, reliable backend processing, and intelligent prompt handling, Research Pilot helps students, educators, and researchers quickly understand complex content and convert raw web text into structured, easy-to-learn knowledge.",
+      image: Research,
+      tags: ["Java", "Chrome-Extension", "SpringBoot","Gemini Ai"],
+      github: "https://github.com/Ksuryawanshi1/Research-Pilot",
+      webapp: "",
+    },
  
     {
       id: 2,
@@ -188,17 +198,16 @@ export const SkillsInfo = [
       github: "https://github.com/Ksuryawanshi1/JOB-PORTAL",
       webapp: "",
     },
-    {
-      id: 5,
-      title: "Emotion Sense",
+     {
+      id: 3,
+      title: "Reply Wizard ",
       description:
-        "Emotion Sense is an interactive web application built using HTML, CSS, JavaScript, and Emotion Detection APIs. By leveraging the user’s camera, the system intelligently recognizes facial expressions, analyzes emotional states in real-time, and delivers personalized recommendations tailored to the detected mood. Designed with a sleek front-end and seamless API integration, the project demonstrates my ability to blend modern UI with AI-driven insights, creating an engaging and human-centric digital experience.",
-      image: Emotion,
-      tags: ["API", "HTML", "CSS", "JavaScript"],
-      github: "",
+         "Reply Wizard is an AI-powered email automation tool built using Spring Boot and React.js that helps users generate smart, context-aware email replies instantly. The system analyzes incoming emails, summarizes key information, and uses AI to generate professional and personalized responses, significantly reducing manual typing effort and response time. With secure backend APIs, a smooth UI, and real-time AI integration, Reply Wizard improves productivity and enhances communication efficiency.",
+      image: Reply,
+      tags: ["Java", "React", "SpringBoot","Gemini Ai"],
+      github: "https://github.com/Ksuryawanshi1/ReplyWizard",
       webapp: "",
     },
- 
     {
       id: 4,
       title: "World Weather",
@@ -210,6 +219,16 @@ export const SkillsInfo = [
       webapp: "https://ksuryawanshi1.github.io/Weather-Webapp/",
     },
     {
+      id: 5,
+      title: "Emotion Sense",
+      description:
+        "Emotion Sense is an interactive web application built using HTML, CSS, JavaScript, and Emotion Detection APIs. By leveraging the user’s camera, the system intelligently recognizes facial expressions, analyzes emotional states in real-time, and delivers personalized recommendations tailored to the detected mood. Designed with a sleek front-end and seamless API integration, the project demonstrates my ability to blend modern UI with AI-driven insights, creating an engaging and human-centric digital experience.",
+      image: Emotion,
+      tags: ["API", "HTML", "CSS", "JavaScript"],
+      github: "",
+      webapp: "",
+    },    
+    {
       id: 6,
       title: "Bank Management System",
       description:
@@ -218,27 +237,5 @@ export const SkillsInfo = [
       tags: ["Java", "JDBC", "SQL"],
       github: "https://github.com/Ksuryawanshi1/Bank-Management-System",
       webapp: "",
-    },
-    {
-      id: 3,
-      title: "Reply Wizard ",
-      description:
-         "Reply Wizard is an AI-powered email automation tool built using Spring Boot and React.js that helps users generate smart, context-aware email replies instantly. The system analyzes incoming emails, summarizes key information, and uses AI to generate professional and personalized responses, significantly reducing manual typing effort and response time. With secure backend APIs, a smooth UI, and real-time AI integration, Reply Wizard improves productivity and enhances communication efficiency.",
-      image: Reply,
-      tags: ["Java", "React", "SpringBoot","Gemini Ai"],
-      github: "https://github.com/Ksuryawanshi1/ReplyWizard",
-      webapp: "",
-    },
-    {
-      id: 1,
-      title: "Research Pilot",
-      description:
-         "Research Pilot is an AI-powered learning assistant built using a Chrome Extension and a Spring Boot backend that helps users transform online content into meaningful study material. It analyzes web pages, summarizes key information, extracts important points, generates intelligent questions, and creates MCQs using AI, making learning faster and more efficient. With seamless browser integration, reliable backend processing, and intelligent prompt handling, Research Pilot helps students, educators, and researchers quickly understand complex content and convert raw web text into structured, easy-to-learn knowledge.",
-      image: Research,
-      tags: ["Java", "Chrome-Extension", "SpringBoot","Gemini Ai"],
-      github: "https://github.com/Ksuryawanshi1/Research-Pilot",
-      webapp: "",
-    },
-    
-  
+    }
   ];  
