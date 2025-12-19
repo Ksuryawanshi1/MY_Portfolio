@@ -8,7 +8,7 @@ const Work = () => {
   const handleOpenModal = (project) => setSelectedProject(project);
   const handleCloseModal = () => setSelectedProject(null);
 
-  // Lock / unlock background scroll
+  // Lock / unlock background scroll on modal open
   useEffect(() => {
     document.body.style.overflow = selectedProject ? "hidden" : "auto";
   }, [selectedProject]);
@@ -47,7 +47,7 @@ const Work = () => {
         </p>
       </div>
 
-      {/* Project grid */}
+      {/* Project Grid */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -60,7 +60,10 @@ const Work = () => {
             key={project.id}
             variants={cardVariants}
             layout
-            whileHover={{ scale: 1.05, boxShadow: "0px 8px 25px rgba(139,92,246,0.4)" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 8px 25px rgba(139,92,246,0.4)",
+            }}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
             onClick={() => handleOpenModal(project)}
             className="border-[0.1px] border-white bg-gray-900 
@@ -102,22 +105,25 @@ const Work = () => {
       <AnimatePresence>
         {selectedProject && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85 p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={handleCloseModal}
           >
             <motion.div
-              className="bg-gray-900 rounded-xl shadow-2xl w-full max-w-3xl h-screen overflow-y-auto scrollbar-thin relative"
+              className="bg-gray-900 rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden relative"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close button */}
-              <div className="flex justify-end p-4 sticky top-0 bg-gray-900 z-10">
+              {/* Header */}
+              <div className="flex justify-between items-center px-6 py-4 border-b border-gray-700 sticky top-0 bg-gray-900 z-10">
+                <h2 className="text-xl font-semibold text-white">
+                  {selectedProject.title}
+                </h2>
                 <button
                   onClick={handleCloseModal}
                   className="text-purple-500 text-3xl font-bold hover:text-white"
@@ -126,31 +132,30 @@ const Work = () => {
                 </button>
               </div>
 
-              <div className="flex flex-col">
+              {/* Scroll Area */}
+              <div className="overflow-y-auto max-h-[78vh] scrollbar-thin">
+
                 {/* Image */}
-                <div className="w-full flex justify-center px-4">
+                <div className="w-full flex justify-center px-5 py-4">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
-                    className="w-[95%] object-contain rounded-xl shadow-2xl"
+                    className="w-full max-h-[300px] object-cover rounded-xl shadow-lg"
                   />
                 </div>
 
                 {/* Content */}
-                <div className="lg:p-8 p-6">
-                  <h3 className="lg:text-3xl text-white mb-4 text-md">
-                    {selectedProject.title}
-                  </h3>
-
-                  <p className="text-gray-400 mb-6 lg:text-base text-xs">
+                <div className="px-6 pb-6">
+                  <p className="text-gray-400 mb-4 text-base leading-relaxed">
                     {selectedProject.description}
                   </p>
 
+                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {selectedProject.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="bg-[#251f38] text-l font-semibold text-purple-500 rounded-full px-2 py-1"
+                        className="bg-[#251f38] text-purple-400 font-semibold rounded-full px-3 py-1 text-sm"
                       >
                         {tag}
                       </span>
@@ -161,34 +166,18 @@ const Work = () => {
                   <div className="flex gap-4">
                     <a
                       href={selectedProject.github || "#"}
-                      target={selectedProject.github ? "_blank" : "_self"}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(e) => {
-                        if (!selectedProject.github) {
-                          e.preventDefault();
-                          alert("Code is not published yet");
-                        }
-                      }}
-                      className="w-1/2 bg-gray-800 hover:bg-white hover:text-black text-gray-400 
-                                 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm 
-                                 font-semibold text-center"
+                      className="w-1/2 bg-gray-800 hover:bg-white hover:text-black text-gray-300 px-4 py-2 rounded-xl text-center font-semibold"
                     >
                       View Code
                     </a>
 
                     <a
                       href={selectedProject.webapp || "#"}
-                      target={selectedProject.webapp ? "_blank" : "_self"}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(e) => {
-                        if (!selectedProject.webapp) {
-                          e.preventDefault();
-                          alert("Project is not hosted yet");
-                        }
-                      }}
-                      className="w-1/2 bg-gray-800 hover:bg-white hover:text-black text-gray-400 
-                                 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm 
-                                 font-semibold text-center"
+                      className="w-1/2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl text-center font-semibold"
                     >
                       View Site
                     </a>
