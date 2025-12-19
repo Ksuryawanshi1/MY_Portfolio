@@ -41,7 +41,8 @@ import Emotion from './assets/work_logo/EmotionDetection.png';
 
 import Campus from './assets/work_logo/Campus.png';
 import bank from './assets/work_logo/bank.png';
-import Reply from './assets/work_logo/Reply.png'
+import Reply from './assets/work_logo/Reply.png';
+import Research from './assets/work_logo/Research.png';
 
 import Weather from './assets/work_logo/Weather.png';
 
@@ -216,6 +217,16 @@ export const SkillsInfo = [
       image: Reply,
       tags: ["Java", "React", "SpringBoot","Gemini Ai"],
       github: "https://github.com/Ksuryawanshi1/ReplyWizard",
+      webapp: "",
+    },
+    {
+      id: 5,
+      title: "Research Pilot",
+      description:
+         "Research Pilot is an AI-powered learning assistant built using a Chrome Extension and a Spring Boot backend that helps users transform online content into meaningful study material. It analyzes web pages, summarizes key information, extracts important points, generates intelligent questions, and creates MCQs using AI, making learning faster and more efficient. With seamless browser integration, reliable backend processing, and intelligent prompt handling, Research Pilot helps students, educators, and researchers quickly understand complex content and convert raw web text into structured, easy-to-learn knowledge.",
+      image: Research,
+      tags: ["Java", "Chrome-Extension", "SpringBoot","Gemini Ai"],
+      github: "https://github.com/Ksuryawanshi1/Research-Pilot",
       webapp: "",
     },
   
