@@ -43,7 +43,7 @@ import Campus from './assets/work_logo/Campus.png';
 import bank from './assets/work_logo/bank.png';
 import Reply from './assets/work_logo/Reply.png';
 import Research from './assets/work_logo/Research.png';
-
+import Finora from './assets/work_logo/Finora.png';
 import Weather from './assets/work_logo/Weather.png';
 
 
@@ -229,5 +229,15 @@ export const SkillsInfo = [
       github: "https://github.com/Ksuryawanshi1/Research-Pilot",
       webapp: "",
     },
+    {
+      id: 6,
+      title: "Finora-AI Financial Assistant",
+      description:
+         "Finora is an intelligent personal finance management platform that helps users track expenses, analyze spending patterns, and receive AI-powered financial suggestions. Built with Spring Boot 3, Java 21, and React 18, the system provides secure authentication, powerful analytics, and real-time insights to help users make smarter financial decisions.The application integrates Google Gemini AI to analyze transaction data and generate meaningful financial recommendations. Automated email alerts powered by Brevo SMTP and Spring Scheduler keep users informed with daily expense summaries, reminders, and alerts. The frontend is built using React + Vite, featuring rich data visualizations, responsive UI, and a seamless user experience.",
+      image: Finora,
+      tags: ["Java",  "SpringBoot","Gemini Ai","Spring Security","Brevo SMTP","Spring Scheduler"],
+      github: "https://github.com/Ksuryawanshi1/Finora-AI-Financial-Assistant",
+      webapp: "",
+    }
   
   ];  
