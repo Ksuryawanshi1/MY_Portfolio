@@ -76,10 +76,12 @@ const About = () => {
 
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto md:mx-0">
-            I am an enthusiastic IT engineer with strong skills in Java and Database Management (SQL). 
-            Proficient in HTML, CSS, JavaScript, React.js, and Tailwind CSS, with hands-on experience in 
-            building impactful projects. Passionate about problem-solving, exploring new technologies, and 
-            creating scalable, user-friendly applications.
+          I am a dedicated Java Developer and Spring Boot Backend Engineer with experience in building robust RESTful APIs,
+          implementing secure authentication systems, managing databases, and optimizing application performance. I have worked
+          on real-world projects involving JWT authentication, schedulers, email automation, AI-powered applications, Chrome
+          extensions, and full-stack integrations. I follow clean coding practices, layered architecture, and Agile
+          methodologies, focusing on developing reliable, maintainable, and scalable software. I am always eager to learn,
+          explore new technologies, and contribute to impactful projects.
           </p>
 
           {/* Buttons */}
