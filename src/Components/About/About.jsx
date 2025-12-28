@@ -87,7 +87,7 @@ const About = () => {
             
             {/* Download CV */}
             <a
-              href="https://drive.google.com/file/d/1wPntQKfazXPjRNQml9h2wk0yuYTf8ahD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iAK7KaqqkWeJcdz8etCt46i7vIGlrvSW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 hover:scale-110 shadow-lg"
